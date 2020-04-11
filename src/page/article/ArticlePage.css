@@ -1,0 +1,218 @@
+.product__resources {
+  margin-top: 4%;
+}
+
+  .container {
+    padding: 4rem 0;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+  }
+  
+  .sidebar .nav-item .nav-link {
+      position: relative;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 0.8rem 2rem;
+      color: #042452;
+      border-bottom: 2px dotted #ccc
+  }
+  .sidebar .nav-item .nav-link:focus, 
+  .sidebar .nav-item .nav-link:hover, 
+  .sidebar .sidemenu .nav-item.active .nav-link {
+      color: #042452;
+      background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar .nav-item:last-child .nav-link {
+    border-bottom: 0;
+  }
+  
+  .sidebar .nav-item .nav-link::before {
+      content: "\f101";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      padding-right: 5px;
+      padding-left: 1rem;
+      font-size: 12px;
+      position: absolute;
+      left: 0;
+  }
+
+  .object-fit-fill {
+    object-fit: fill;
+  }
+  
+  .object-fit-contain {
+    object-fit: contain;
+  }
+  
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  
+  .object-fit-none {
+    object-fit: none;
+  }
+  
+  .object-fit-scale-down {
+    object-fit: scale-down;
+  }
+
+  
+  button img {
+    transition: transform .25s;
+  }
+  button:hover > img {
+    transform: scale(1.2);
+  }
+  button:focus {
+    outline: none;
+  }
+  
+  input {
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  input::placeholder {
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  .searchbox {
+    height: 60px;
+    width: 580px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    /* position: relative; */
+    /* left: 0; */
+    /* right: 0; */
+    margin: 0 auto;
+    /* top: 50px; */
+    display: flex;
+    background-color: #f5f5f5;
+    margin-bottom: 2%;
+  }
+  .searchbox > .btn-menu {
+    padding: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .searchbox > .search {
+    border: none;
+    width: 100%;
+  }
+  .searchbox > .btn-search {
+    padding: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-modal {
+    height: 400px;
+    width: 450px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 160px;
+    animation: slideInUp .5s;
+    display: none;
+  }
+  .search-modal-header {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #00000017;
+  }
+  .search-modal-header h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: left;
+  }
+  .search-modal-header span img {
+    float: right;
+    position: absolute;
+    right: 16px;
+    top: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .5s all;
+  }
+  .search-modal-header span img:hover {
+    transform: scale(1.1);
+  }
+  .search-modal-body {
+    padding: 20px;
+    height: 285px;
+    overflow-y: scroll;
+  }
+  .search-modal-body .message {
+    display: flex;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  .search-modal-body .message-avatar {
+    margin-right: 16px;
+    margin-top: 10px;
+  }
+  .search-modal-body .message-avatar img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
+  }
+  .search-modal-body .message-body {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .search-modal-body .message-body p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+  }
+  .search-modal-body .message-body small {
+    font-weight: 400;
+    font-family: Dosis;
+    color: #777;
+  }
+  .search-modal-body .message:hover {
+    background-color: #2F94D817;
+  }
+  .search-modal-body::-webkit-scrollbar {
+    width: 5px;
+  }
+  .search-modal-body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .search-modal-body::-webkit-scrollbar-thumb {
+    background: #2F94D8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.15);
+  }
+  .search-modal-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  @keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 15%, 0);
+      transform: translate3d(0, 15%, 0);
+      visibility: visible;
+    }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  

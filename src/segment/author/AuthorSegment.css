@@ -1,0 +1,38 @@
+.article-meta {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    padding-left: 40px;
+    display: inline-block;
+    padding-left: 12px;
+    padding-top: 16px;
+    vertical-align: top;
+}
+
+
+
+.article-meta img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    border: 1px solid #d63031;
+    padding: 2px;
+    display: inline-block;
+}
+
+.meta-data {
+    display: inline-block;
+    padding-left: 12px;
+    padding-top: 16px;
+    vertical-align: top;
+}
+
+.meta-author {
+    color: #545454;
+}
+
+
+.meta-date {
+    color: #777777;
+}
+  
